@@ -255,6 +255,7 @@ header {
 
     width: 408px;
     height: 578px;
+    padding: 72px 24px 104px 24px;
 
     background-color: #FCFCFC;
 }
@@ -273,6 +274,40 @@ header {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+}
+
+.modal > h2 {
+    margin-bottom: 14px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.modal-label.checkbox {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.label-text {
+    margin-top: 8px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--subtle-text);
 }
 
 
