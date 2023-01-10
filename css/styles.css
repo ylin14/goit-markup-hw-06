@@ -549,6 +549,57 @@ footer {
     margin-left: 80px;
 }
 
+.disp-footer-form { 
+    display: flex;
+    align-items: center;
+
+    column-gap: 24px;
+
+
+}
+
+.btn-form {
+    display: inline-block;
+    position: relative;
+
+    padding: 8px 24px;
+
+    width: 165px;
+    height: 40px;
+
+    background-color: var(--primary-brand);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sub-email {
+    width: 264px;
+    height: 40px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+/* .disp-footer-form ~ input {
+    display: block;
+    width: 264px;
+    height: 40px;
+} */
+
+
+.btn-form > span {
+    margin-right: 64px;
+}
+
+.btn-form > svg {
+    position: absolute;
+    top: 8px;
+    right: 24px;
+}
+
+
 
 /* ------------PORTFOLIO------------ */
 
