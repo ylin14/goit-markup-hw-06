@@ -513,7 +513,7 @@ footer {
     width: 208px;
 }
 
-.social-header {
+.footer-header {
     margin-bottom: 16px;
 
     color: #FFFFFF;
@@ -543,6 +543,10 @@ footer {
 .social-link-footer:focus,
 .social-link-footer:hover {
     background: #31D0AA;
+}
+
+.subscribe-form {
+    margin-left: 80px;
 }
 
 

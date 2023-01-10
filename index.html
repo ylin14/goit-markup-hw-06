@@ -94,6 +94,32 @@
                 alt="Кнопка закриття модального вікна"
               />
             </button>
+            <h2>Leave your contacts and we will call you back</h2>
+            <form action="">
+              <label for="">
+                Name
+                <input type="text">
+              </label>
+              <label for="">
+                Phone
+                <input type="text">
+              </label>
+              <label for="">
+                Email
+                <input type="text">
+              </label>
+              <label for="">
+                Comment
+                <input type="textarea">
+              </label>
+              <label for="">
+                <input type="checkbox">
+                I accept the terms and conditions of the <a href="">Privacy Policy</a> 
+              </label>
+            </form>
+            <button type="submit">
+              Send
+            </button>
           </div>
         </div>
       </section>
@@ -409,7 +435,7 @@
         </div>
 
         <div class="social-footer">
-          <h2 class="social-header">Social media</h2>
+          <h2 class="footer-header">Social media</h2>
           <ul class="social-list-footer">
             <li class="social-item footer">
               <a href="" class="social-link-footer">
@@ -437,21 +463,22 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h2>Subscribe</h2>        
-          <form action="">
+        <div class="subscribe-form">
+          <h2 class="footer-header">Subscribe</h2> 
+          <div>          
+            <form action="">
             <label for="">
               <input type="text" name="email" placeholder="E-mail">
             </label>
           </form>
-          <button>
+          <button type="submit">
             Subscribe
             <svg>
-              <use></use>
+              <use href="./images/icons.svg#icon-subscribe"></use>
             </svg>
           </button>
+        </div>       
         </div>
-
       </div>
     </footer>
     <script src="./js/modal.js"></script>
