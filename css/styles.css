@@ -276,6 +276,25 @@ header {
     pointer-events: none;
 }
 
+.form {
+}
+.form-list {
+}
+.form-item {
+    display: inline-flex;
+    flex-direction: column;
+
+    list-style-type: none;
+}
+ .form-item.checkbox {
+    flex-direction: row;
+ }
+
+.form-label {
+}
+.form-input {
+}
+
 
 /* PRINCIPLES */
 
