@@ -293,6 +293,13 @@ header {
 .form-label {
 }
 .form-input {
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
