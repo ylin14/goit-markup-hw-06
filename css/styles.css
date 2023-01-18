@@ -286,8 +286,8 @@ font-size: 16px;
 line-height: 1.5;
 text-align: center;
 }
+
 .form-element {
-    
     width: 360px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -302,14 +302,16 @@ text-align: center;
     padding-left: 16px;
 }
 
-.form-element:hover,
-.form-element:focus {
+
+
+.form-item:hover .form-element,
+.form-item:focus .form-element {
     border: 1px solid rgba(77, 90, 229, 1);
     
 }
 
-.form-element:hover .form-icon,
-.form-element:focus .form-icon {
+.form-item:hover .form-icon,
+.form-item:focus .form-icon {
     fill: rgba(77, 90, 229, 1);
 }
 
@@ -359,10 +361,22 @@ text-align: center;
  }
  
 .form-element-checkbox {
+    border: 1.25px solid rgba(46, 47, 66, 1);
+}
+
+.form-element-checkbox:hover {
+    position: relative;
     width: 16px;
     height: 16px;
-    
-    border: 1.25px solid rgba(46, 47, 66, 1);
+}
+
+.checkbox-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width:16px;
+    height: 16px;
 }
  
 
