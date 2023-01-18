@@ -214,8 +214,6 @@ header {
 .hero-button {
     display: block;
     padding: 16px 32px;
-    margin-left: auto;
-    margin-right: auto;
 
     border:none;
     border-radius: 4px;
@@ -225,17 +223,24 @@ header {
     letter-spacing: 0.04em;    
     color: #FFFFFF;
     background-color: var(--primary-brand);
+}
 
+.hero-button.order {
+    
+    margin-left: auto;
+    margin-right: auto;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover, 
-.hero-button:focus {
+.hero-button.order:hover, 
+.hero-button.order:focus {
     background: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 
 .backdrop {
     position: fixed;
@@ -282,10 +287,30 @@ line-height: 1.5;
 text-align: center;
 }
 .form-element {
+    
     width: 360px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-element.input {
+    padding-left: 38px;
+}
+
+.form-element.textarea {
+    padding-left: 16px;
+}
+
+.form-element:hover,
+.form-element:focus {
+    border: 1px solid rgba(77, 90, 229, 1);
+    
+}
+
+.form-element:hover .form-icon,
+.form-element:focus .form-icon {
+    fill: rgba(77, 90, 229, 1);
 }
 
 .form-list {
@@ -310,20 +335,21 @@ text-align: center;
  }
 
  .form-element.textarea {
-    
+    height: 120px;
+    resize: none;
  }
 
 .form-label {
-    position: absolute;
-    top: -34px;
+    position: absolute; 
+    top: 0;
     left: 0;
-    /* transform: translateY(100%); */
+    transform: translateY(-16px);
+
+    /* margin-bottom: 4px; */
 
     font-size: 12px;
     line-height: 1.3;
     color: var(--subtle-text);
-
-    /* background-color: red; */
 }
 
 .form-item.checkbox {
@@ -331,12 +357,22 @@ text-align: center;
     align-items: center;
     column-gap: 4px;
  }
+ 
+.form-element-checkbox {
+    width: 16px;
+    height: 16px;
+    
+    border: 1.25px solid rgba(46, 47, 66, 1);
+}
+ 
 
 .form-label-checkbox {
 
     font-size: 12px;
     line-height: 1.3;
     color: var(--subtle-text);
+
+    
 }
 
 
@@ -346,6 +382,10 @@ text-align: center;
     left: 16px;
 
     transform: translateY(-50%);
+}
+
+.hero-button.submit {
+    margin: 24px 120px;
 }
 
 
