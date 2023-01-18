@@ -315,9 +315,9 @@ text-align: center;
 
 .form-label {
     position: absolute;
-    top: calc((-100%+4px));
+    top: -34px;
     left: 0;
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
 
     font-size: 12px;
     line-height: 1.3;
