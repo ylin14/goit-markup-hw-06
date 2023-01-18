@@ -304,23 +304,30 @@ text-align: center;
 
 
 
-.form-item:hover .form-element,
-.form-item:focus .form-element {
-    border: 1px solid rgba(77, 90, 229, 1);
-    
-}
-
-.form-item:hover .form-icon,
-.form-item:focus .form-icon {
-    fill: rgba(77, 90, 229, 1);
-}
-
 .form-list {
 }
 
 .form-item {
     position:relative;
     list-style-type: none;
+
+
+}
+
+.form-item .form-element,
+.form-item .form-icon {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-item:hover .form-element,
+.form-item:focus .form-element {
+    border: 1px solid rgba(77, 90, 229, 1);
+}
+
+.form-item:hover .form-icon,
+.form-item:focus .form-icon {
+    fill: rgba(77, 90, 229, 1);
 }
 
 .form-item:first-child {
