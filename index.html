@@ -102,24 +102,48 @@
                 <svg class="input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
-            </div>
-            <label for="phone" class="form-label">Phone</label>
-            <div class="input-wrap">
-              <input type="text" name="phone" class="form-element input" />
-              <svg class="input-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-              </svg>
-          </div>
-          <label for="Email" class="form-label">Email</label>
-          <div class="input-wrap">
-            <input type="text" name="Email" class="form-element input" />
-            <svg class="input-icon" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-            </svg>
-          </div>
-          <label for="comment" class="form-label">Comment</label>
-          <textarea name="comment" id="comment" placeholder="Text input" class="form-element textarea"></textarea>
+              </div>
+              <label for="phone" class="form-label">Phone</label>
+              <div class="input-wrap">
+                <input type="text" name="phone" class="form-element input" />
+                <svg class="input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </div>
+              <label for="Email" class="form-label">Email</label>
+              <div class="input-wrap">
+                <input type="text" name="Email" class="form-element input" />
+                <svg class="input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </div>
+              <label for="comment" class="form-label">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+                class="form-element textarea"
+              ></textarea>
+              <div class="form-checkbox">
+                <input
+                  type="checkbox"
+                  name="privacy"
+                  id="privacy"
+                  class="input-checkbox visually-hidden"
+                />
+                <label for="privacy" class="form-label checkbox-label">
+                  <span>
+                    <svg class="check-icon" width="10px" height="8px">
+                      <use href="images/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the<a href="">
+                    Privacy Policy
+                  </a></label
+                >
+              </div>
             </form>
+            <button type="submit" class="hero-button order">Send</button>
           </div>
         </div>
       </section>
@@ -490,13 +514,9 @@
   </body>
 </html>
 
-
-
-
-
 <!-- CHECKBOX -->
 
-                 <!-- <li class="form-item checkbox">
+<!-- <li class="form-item checkbox">
                   <input
                     type="checkbox"
                     class="form-element-checkbox"
