@@ -77,7 +77,7 @@
       <!-- HERO -->
 
       <section class="hero dark">
-        <div class="container hero">
+        <div class="container">
           <h1 class="hero-header">
             Effective Solutions <br />
             for Your Business
@@ -89,10 +89,11 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="btn-close-modal" data-modal-close>
-              <img
-                src="./images/close.svg"
-                alt="Кнопка закриття модального вікна"
-              />
+              <div class="btn-close-modal-style">
+                <svg class="icon-modal-close">
+                  <use href="./images/icons.svg#icon-modal-close"></use>
+                </svg>
+              </div>
             </button>
             <h2>Leave your contacts and we will call you back</h2>
             <form class="form">
@@ -137,13 +138,13 @@
                       <use href="images/icons.svg#icon-Vector"></use>
                     </svg>
                   </span>
-                  I accept the terms and conditions of the<a href="">
+                  I accept the terms and conditions of the &nbsp<a href="">
                     Privacy Policy
                   </a></label
                 >
               </div>
             </form>
-            <button type="submit" class="hero-button order">Send</button>
+            <button type="submit" class="hero-button send">Send</button>
           </div>
         </div>
       </section>
@@ -490,7 +491,7 @@
         <div class="subscribe-form">
           <h2 class="footer-header">Subscribe</h2>
           <div class="disp-footer-form">
-            <form action="">
+            <form>
               <label>
                 <input
                   type="text"
